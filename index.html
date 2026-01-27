@@ -2,226 +2,289 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Edgar Saltillo Ramírez | Java Full Stack Jr.</title>
-    <meta name="description"
-        content="Portafolio de Edgar Saltillo Ramírez, Desarrollador Java Full Stack Jr. Proyectos, CV y experiencia." />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edgar Saltillo Ramírez | Java Full Stack Jr.</title>
+  <meta name="description"
+    content="Portafolio de Edgar Saltillo Ramírez, Desarrollador Java Full Stack Jr. Proyectos, CV y experiencia." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  
 </head>
 
 <body>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <a id="top" aria-hidden="true"></a>
 
-    <header class="topbar" id="top">
-        <div class="container topbar__inner">
-            <a class="brand" href="#inicio" aria-label="Ir a Inicio">
-                <span class="brand__name">Edgar Saltillo Ramírez</span>
-            </a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-            <nav class="nav" aria-label="Navegación principal">
-                <a class="nav__link is-active" href="#inicio">Inicio</a>
-                <a class="nav__link" href="#acerca">Acerca de mí</a>
-                <a class="nav__link" href="#cv">CV</a>
-                <a class="nav__link" href="#portafolio">Portafolio</a>
-            </nav>
+  <header class="topbar" id="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#inicio" aria-label="Ir a Inicio">
+        <span class="brand__name">Edgar Saltillo Ramírez</span>
+      </a>
 
-            <button class="navbtn" type="button" aria-label="Abrir menú" aria-expanded="false">
-                <span class="navbtn__lines" aria-hidden="true"></span>
-            </button>
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="nav__link is-active" href="#inicio">Inicio</a>
+        <a class="nav__link" href="#acerca">Acerca de mí</a>
+        <a class="nav__link" href="#cv">CV</a>
+        <a class="nav__link" href="#portafolio">Portafolio</a>
+      </nav>
+
+      <button class="navbtn" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span class="navbtn__lines" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div class="drawer" id="drawer" hidden>
+      <nav class="drawer__nav" aria-label="Navegación móvil">
+        <a class="drawer__link" href="#inicio">Inicio</a>
+        <a class="drawer__link" href="#acerca">Acerca de mí</a>
+        <a class="drawer__link" href="#cv">CV</a>
+        <a class="drawer__link" href="#portafolio">Portafolio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section id="inicio" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">Hola, soy</p>
+          <h1 class="hero__title">Edgar Saltillo Ramírez</h1>
+          <p class="hero__role">Java Full Stack Developer Jr.</p>
+          <p class="hero__summary">
+            Me enfoco en construir soluciones web claras, funcionales y orientadas a resultados. Me motiva resolver
+            problemas,
+            trabajar con metodologías ágiles y seguir aprendiendo continuamente.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#portafolio">Ver proyectos</a>
+            <a class="btn btn--ghost" href="#cv">Leer CV</a>
+          </div>
+
+          <div class="hero__links" aria-label="Enlaces de contacto">
+            <a class="chip" href="https://github.com/Ed-Sal1" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="chip" href="https://www.linkedin.com/in/edgar-saltillo-ramirez/" target="_blank"
+              rel="noreferrer">LinkedIn</a>
+            <a class="chip" href="mailto:edsaltillo@gmail.com">edsaltillo@gmail.com</a>
+            <a class="chip chip--cv" href="assets/cv/CV-Edgar.pdf" download>Descargar CV (PDF)</a>
+          </div>
         </div>
 
-        <div class="drawer" id="drawer" hidden>
-            <nav class="drawer__nav" aria-label="Navegación móvil">
-                <a class="drawer__link" href="#inicio">Inicio</a>
-                <a class="drawer__link" href="#acerca">Acerca de mí</a>
-                <a class="drawer__link" href="#cv">CV</a>
-                <a class="drawer__link" href="#portafolio">Portafolio</a>
-            </nav>
+        <figure class="hero__media reveal">
+          <img class="hero__photo" src="assets/img/edgar.JPEG" alt="Foto de Edgar Saltillo Ramírez" />
+          <figcaption class="sr-only">Fotografía de perfil</figcaption>
+        </figure>
+      </div>
+
+      <div class="hero__ornaments" aria-hidden="true"></div>
+    </section>
+
+    <section id="acerca" class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Acerca de mí</h2>
+
+        <article class="card reveal">
+          <p class="card__text">
+            Mi formación en Administración de Empresas me dio una visión integral de procesos y toma de decisiones. Esa
+            base,
+            combinada con mi curiosidad por entender cómo funcionan aplicaciones y sistemas, me llevó a formarme como
+            desarrollador.
+            Disfruto especialmente descubrir problemas y construir soluciones, así como trabajar con Scrum y entornos
+            colaborativos.
+            Actualmente busco consolidar mis bases con mentoría y retos que me mantengan proactivo, orientado a
+            objetivos y en mejora continua.
+          </p>
+        </article>
+      </div>
+    </section>
+
+
+    <section id="cv" class="section section--tint">
+      <div class="container">
+        <h2 class="section__title reveal">CV</h2>
+
+        <div class="grid2">
+          <article class="card reveal">
+            <h3 class="card__title">Formación y perfil</h3>
+            <p class="card__text">
+              Integro una base sólida en negocios con especialización técnica en desarrollo. He trabajado en entornos
+              exigentes,
+              liderando equipos y gestionando comunicación y objetivos. Mi enfoque es aportar valor técnico con
+              mentalidad de negocio
+              y evolución constante hacia responsabilidades de mayor impacto.
+            </p>
+
+            <div class="card__actions">
+              <a class="btn btn--primary" href="assets/cv/CV-Edgar.pdf" download>Descargar CV (PDF)</a>
+              <a class="btn btn--ghost" href="#portafolio">Ver proyectos</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <h3 class="card__title">Tecnologías que uso</h3>
+
+            <div class="icons" role="list" aria-label="Tecnologías">
+              <div class="icon" role="listitem" title="HTML5" aria-label="HTML5">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+              </div>
+              <div class="icon" role="listitem" title="CSS3" aria-label="CSS3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+              </div>
+              <div class="icon" role="listitem" title="JavaScript" aria-label="JavaScript">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+              </div>
+              <div class="icon" role="listitem" title="Java" aria-label="Java">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+              </div>
+              <div class="icon" role="listitem" title="Spring Boot" aria-label="Spring Boot">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
+              </div>
+              <div class="icon" role="listitem" title="MySQL" aria-label="MySQL">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+              </div>
+              <div class="icon" role="listitem" title="Git" aria-label="Git">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
+              </div>
+              <div class="icon" role="listitem" title="GitHub" aria-label="GitHub">
+                <i class="devicon-github-original"></i>
+              </div>
+              <div class="icon" role="listitem" title="Jira" aria-label="Jira">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg" />
+              </div>
+              <div class="icon" role="listitem" title="Bootstrap" aria-label="Bootstrap">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
+              </div>
+            </div>
+          </article>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main id="contenido">
-        <section id="inicio" class="hero">
-            <div class="container hero__grid">
-                <div class="hero__copy reveal">
-                    <p class="eyebrow">Hola, soy</p>
-                    <h1 class="hero__title">Edgar Saltillo Ramírez</h1>
-                    <p class="hero__role">Java Full Stack Developer Jr.</p>
-                    <p class="hero__summary">
-                        Me enfoco en construir soluciones web claras, funcionales y orientadas a resultados. Me motiva
-                        resolver problemas,
-                        trabajar con metodologías ágiles y seguir aprendiendo continuamente.
+
+    <section id="portafolio" class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Portafolio</h2>
+        <div id="projectsGrid" class="projects"></div>
+      </div>
+    </section>
+
+  
+    <section id="contacto" class="section contact">
+      <div class="container">
+        <h2 class="section__title reveal">Contacto</h2>
+
+        <div class="contact__panel reveal">
+          <div class="contact__bg" aria-hidden="true"></div>
+          <div class="contact__overlay" aria-hidden="true"></div>
+
+          <div class="contact__content">
+            <div class="contact__left">
+              <h3 class="contact__headline">Hablemos</h3>
+              <p class="contact__lead">
+                Si quieres conocer más sobre mi perfil, mis proyectos o una posible colaboración, estaré encantado de
+                conversar.
+                Puedo adaptarme a distintos contextos e industrias, con enfoque en aprender rápido y aportar valor desde
+                el primer sprint.
+              </p>
+
+              <div class="contact__items">
+                <div class="contact__item">
+                  <span class="contact__icon" aria-hidden="true">✉</span>
+                  <div class="contact__itemText">
+                    <p class="contact__label">Correo</p>
+                    <p class="contact__value">
+                      <a class="contact__link" href="mailto:edsaltillo@gmial.com">edsaltillo@gmail.com</a>
                     </p>
-
-                    <div class="hero__cta">
-                        <a class="btn btn--primary" href="#portafolio">Ver proyectos</a>
-                        <a class="btn btn--ghost" href="#cv">Leer CV</a>
-                    </div>
-
-                    <div class="hero__links" aria-label="Enlaces de contacto">
-                        <a class="chip" href="https://github.com/Ed-Sal1" target="_blank" rel="noreferrer">GitHub</a>
-                        <a class="chip" href="https://www.linkedin.com/in/edgar-saltillo-ramirez/" target="_blank"
-                            rel="noreferrer">LinkedIn</a>
-                        <a class="chip" href="mailto:edsaltillo@gmail.com">edsaltillo@gmail.com</a>
-                    </div>
+                  </div>
                 </div>
 
-                <figure class="hero__media reveal">
-                    <img class="hero__photo" src="assets/img/edgar.JPEG" alt="Foto de Edgar Saltillo Ramírez" />
-                    <figcaption class="sr-only">Fotografía de perfil</figcaption>
-                </figure>
-            </div>
-
-            <div class="hero__ornaments" aria-hidden="true"></div>
-        </section>
-
-
-        <section id="acerca" class="section">
-            <div class="container">
-                <h2 class="section__title reveal">Acerca de mí</h2>
-
-                <article class="card reveal">
-                    <p class="card__text">
-                        Mi formación en Administración de Empresas me dio una visión integral de procesos y toma de
-                        decisiones. Esa base,
-                        combinada con mi curiosidad por entender cómo funcionan aplicaciones y sistemas, me llevó a
-                        formarme como desarrollador.
-                        Disfruto especialmente descubrir problemas y construir soluciones, así como trabajar con Scrum y
-                        entornos colaborativos.
-                        Actualmente busco consolidar mis bases con mentoría y retos que me mantengan proactivo,
-                        orientado a objetivos y en mejora continua.
+                <div class="contact__item">
+                  <span class="contact__icon" aria-hidden="true">☎</span>
+                  <div class="contact__itemText">
+                    <p class="contact__label">Teléfono</p>
+                    <p class="contact__value">
+                      <a class="contact__link" href="tel:+52 55 7374 3966">+52 55 7374 3966</a>
                     </p>
-                </article>
-            </div>
-        </section>
-
-
-        <section id="cv" class="section section--tint">
-            <div class="container">
-                <h2 class="section__title reveal">CV</h2>
-
-                <div class="grid2">
-                    <article class="card reveal">
-                        <h3 class="card__title">Formación y perfil</h3>
-                        <p class="card__text">
-                            Integro una base sólida en negocios con especialización técnica en desarrollo. He trabajado
-                            en entornos exigentes,
-                            liderando equipos y gestionando comunicación y objetivos. Mi enfoque es aportar valor
-                            técnico con mentalidad de negocio
-                            y evolución constante hacia responsabilidades de mayor impacto.
-                        </p>
-                    </article>
-
-                    <article class="card reveal">
-                        <h3 class="card__title">Tecnologías que uso</h3>
-
-                        <div class="icons" role="list" aria-label="Tecnologías">
-
-                            <div class="icon" role="listitem" title="HTML5" aria-label="HTML5">
-                                <span class="icon__badge">HTML</span>
-                            </div>
-                            <div class="icon" role="listitem" title="CSS3" aria-label="CSS3">
-                                <span class="icon__badge">CSS</span>
-                            </div>
-                            <div class="icon" role="listitem" title="JavaScript" aria-label="JavaScript">
-                                <span class="icon__badge">JS</span>
-                            </div>
-                            <div class="icon" role="listitem" title="Java" aria-label="Java">
-                                <span class="icon__badge">JAVA</span>
-                            </div>
-                            <div class="icon" role="listitem" title="Spring Boot" aria-label="Spring Boot">
-                                <span class="icon__badge">SPRING</span>
-                            </div>
-                            <div class="icon" role="listitem" title="MySQL" aria-label="MySQL">
-                                <span class="icon__badge">MySQL</span>
-                            </div>
-                            <div class="icon" role="listitem" title="Git" aria-label="Git">
-                                <span class="icon__badge">GIT</span>
-                            </div>
-                            <div class="icon" role="listitem" title="GitHub" aria-label="GitHub">
-                                <span class="icon__badge">GH</span>
-                            </div>
-                            <div class="icon" role="listitem" title="Jira" aria-label="Jira">
-                                <span class="icon__badge">JIRA</span>
-                            </div>
-                            <div class="icon" role="listitem" title="Bootstrap" aria-label="Bootstrap">
-                                <span class="icon__badge">BS</span>
-                            </div>
-                        </div>
-
-
-                    </article>
+                  </div>
                 </div>
-            </div>
-        </section>
 
-
-        <section id="portafolio" class="section">
-            <div class="container">
-                <h2 class="section__title reveal">Portafolio</h2>
-
-                <div class="projects">
-                    <article class="project card reveal">
-                        <header class="project__head">
-                            <h3 class="project__title">LPDC — Engagement con cuestionario interactivo</h3>
-                            <p class="project__meta">Hackathon colaborativo | Rol: Front-end</p>
-                        </header>
-
-                        <p class="project__text">
-                            Diseñé e implementé un cuestionario con lógica en JavaScript para aumentar permanencia y
-                            convertir el resultado en una
-                            invitación directa a comprar merch del equipo obtenido, integrándolo en una landing con
-                            catálogo y vista individual.
-                            El reto principal fue coordinación en equipo aleatorio y restricciones de tiempo, resuelto
-                            mediante organización y enfoque por entregables.
-                        </p>
-
-                        <div class="project__actions">
-                            <a class="btn btn--primary" href="https://sportcommerce.netlify.app/" target="_blank"
-                                rel="noreferrer">Ver demo</a>
-                            <a class="btn btn--ghost" href="https://github.com/mttzDan/Hackaton" target="_blank"
-                                rel="noreferrer">Ver repositorio</a>
-                        </div>
-                    </article>
-
-                    <article class="project card reveal">
-                        <header class="project__head">
-                            <h3 class="project__title">Bloom Studio — Full Stack con Scrum y cliente real</h3>
-                            <p class="project__meta">Bootcamp Generation | Rol: Scrum Master + Full Stack</p>
-                        </header>
-
-                        <p class="project__text">
-                            Coordiné sprints y backlog en Jira y participé en front, base de datos y back-end. El
-                            proyecto se construyó en paralelo
-                            al aprendizaje del bootcamp, por lo que la comunicación, mentoría y mejora incremental
-                            fueron claves para entregar un sitio funcional,
-                            preparado para integración y crecimiento.
-                        </p>
-
-                        <div class="project__actions">
-                            <a class="btn btn--primary" href="#" target="_blank" rel="noreferrer">Ver demo</a>
-                            <a class="btn btn--ghost" href="https://github.com/BloodSttudio-LosError404/Blood-Studio"
-                                target="_blank" rel="noreferrer">Ver repositorio</a>
-                        </div>
-                    </article>
+                <div class="contact__item">
+                  <span class="contact__icon" aria-hidden="true">⌂</span>
+                  <div class="contact__itemText">
+                    <p class="contact__label">Ubicación</p>
+                    <p class="contact__value">México CDMX </p>
+                  </div>
                 </div>
-            </div>
-        </section>
+              </div>
 
-        <footer class="footer">
-            <div class="container footer__inner">
-                <p class="footer__text">© <span id="year"></span> Edgar Saltillo Ramírez. Portafolio profesional.</p>
-                <a class="to-top" href="#top" aria-label="Volver arriba">↑</a>
+              <div class="contact__chips" aria-label="Enlaces profesionales">
+                <a class="chip" href="https://www.linkedin.com/in/edgar-saltillo-ramirez/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a class="chip" href="https://github.com/Ed-Sal1" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
             </div>
-        </footer>
-    </main>
 
-    <script src="js/main.js"></script>
+            <div class="contact__right">
+              <form class="contact__form" target="_blank" action="https://formsubmit.co/edsaltillo@gmail.com" method="POST" >
+                <div class="contact__row">
+                  <label class="contact__field">
+                    <span class="contact__fieldLabel">Nombre</span>
+                    <input class="contact__input" type="text" name="name" placeholder="Tu nombre" autocomplete="name"
+                      required>
+                  </label>
+
+                  <label class="contact__field">
+                    <span class="contact__fieldLabel">Correo</span>
+                    <input class="contact__input" type="email" name="email" placeholder="tu@email.com"
+                      autocomplete="email" required>
+                  </label>
+                </div>
+
+                <label class="contact__field">
+                  <span class="contact__fieldLabel">Asunto</span>
+                  <input class="contact__input" type="text" name="subject"
+                    placeholder="Ej. Oportunidad Jr / Colaboración" required>
+                </label>
+
+                <label class="contact__field">
+                  <span class="contact__fieldLabel">Mensaje</span>
+                  <input class="contact__textarea" name="message" rows="5"
+                    placeholder="Cuéntame qué necesitas y te respondo pronto." required>
+                </label>
+
+                <div class="contact__actions">
+                  <button class="btn btn--primary contact__submit" type="submit">Enviar</button>
+                  
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__text">© <span id="year"></span> Edgar Saltillo Ramírez. Portafolio profesional.</p>
+        <a class="to-top" id="toTop" href="#top" aria-label="Volver arriba">↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
