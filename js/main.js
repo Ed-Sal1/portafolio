@@ -78,7 +78,7 @@
       description:
         "Coordiné sprints y backlog en Jira y participé en front, base de datos y back-end. El proyecto se construyó en paralelo al aprendizaje del bootcamp, por lo que la comunicación, mentoría y mejora incremental fueron claves para entregar un sitio funcional, preparado para integración y crecimiento.",
       image: "assets/img/bloom.png",
-      demoUrl: "#",
+      demoUrl: "https://bloomstudi0.netlify.app/",
       repoUrl: "https://github.com/BloodSttudio-LosError404/Blood-Studio",
       alt: "Vista previa del proyecto E-commerce",
     },
